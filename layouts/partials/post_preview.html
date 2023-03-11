@@ -1,0 +1,49 @@
+{{ $post := . }}
+{{ if isset . "Post" }}
+{{ $post = .Post }}
+{{ end }}
+
+{{ $is_newest := false }}
+{{ if isset . "is_newest" }}
+{{ $is_newest = .is_newest }}
+{{ end }}
+
+<article class="post-preview">
+    <a href="{{ $post.Permalink }}">
+        <h2 class="post-title">{{ $post.Title }}</h2>
+        {{ if .Params.subtitle }}
+        <h3 class="post-subtitle">
+            {{ $post.Params.subtitle }}
+        </h3>
+        {{ end }}
+        {{ if .Params.image }}
+        <img src="{{ $post.Params.image }}" alt="{{ $post.Title }}" class="img-title" />
+        {{ end }}
+        {{ if .Params.video }}
+        <video loop autoplay muted playsinline class="img-title">
+            <source src="{{ $post.Params.video }}">
+        </video>
+        {{ end }}
+    </a>
+
+    <p class="post-meta">
+        {{ partial "post_meta.html" $post }}
+    </p>
+    <div class="post-entry">
+        {{ if and (not $is_newest) (or ($post.Truncated) ($post.Params.summary)) }}
+        {{ $post.Summary }}
+        <a href="{{ $post.Permalink }}" class="post-read-more">[{{ i18n "readMore" }}]</a>
+        {{ else }}
+        {{ $post.Content }}
+        {{ end }}
+    </div>
+
+    {{ if $post.Params.tags }}
+    <div class="blog-tags">
+        {{ range $post.Params.tags }}
+        <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+        {{ end }}
+    </div>
+    {{ end }}
+
+</article>
