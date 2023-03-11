@@ -1,7 +1,6 @@
 ---
 title: "Creating a Django development environment"
 date: 2014-08-21T20:46:16-03:00
-draft: true
 summary: "Setup a Django 1.6 development environment using python virtualenv."
 tags: ["django", "python"]
 ---

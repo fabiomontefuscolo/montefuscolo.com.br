@@ -1,7 +1,6 @@
 ---
 title: "JavaScript destructuring assignment"
 date: 2020-12-30T07:22:16-03:00
-draft: true
 summary: "This feature of JavaScript allows the programmer to unpack array and object values to assign them to variables and function parameters."
 tags: ["javascript"]
 ---

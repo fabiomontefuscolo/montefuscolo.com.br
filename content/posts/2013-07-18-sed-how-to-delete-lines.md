@@ -1,7 +1,6 @@
 ---
 title: "Sed How to Delete Lines"
 date: 2013-07-18T20:46:16-03:00
-draft: true
 summary: "Some sed commands demonstrating how to delete lines and range of lines in a text file"
 tags: ["linux", "sed"]
 ---

@@ -1,7 +1,6 @@
 ---
 title: "File handling on NodeJS"
 date: 2015-02-22T12:21:16-03:00
-draft: true
 summary: "List files from a directory and read files' content using NodeJS."
 tags: ["nodejs", "javascript"]
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Set PHP timezone"
 date: 2019-11-22T12:58:16-03:00
-draft: true
 summary: "Set a time in PHP configuration file to correctly display date and time information"
 tags: ["php"]
 ---

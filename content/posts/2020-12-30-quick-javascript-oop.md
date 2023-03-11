@@ -1,7 +1,6 @@
 ---
 title: "Quick JavaScript OOP"
 date: 2020-12-30T07:22:16-03:00
-draft: true
 summary: "Basic JavaScript syntax to write classes, methods, properties and inheritance"
 tags: ["javascript"]
 ---

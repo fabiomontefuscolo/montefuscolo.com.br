@@ -1,7 +1,6 @@
 ---
 title: "ICP Brasil client certs setup for Nginx"
 date: 2021-04-14T15:53:16-03:00
-draft: true
 summary: "Use client certificates to authenticate and control access to resources with Nginx."
 tags: ["nginx"]
 ---

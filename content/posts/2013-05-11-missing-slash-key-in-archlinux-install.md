@@ -1,7 +1,6 @@
 ---
 title: "Missing slash Key in Archlinux Install"
 date: 2013-05-11T23:55:00-03:00
-draft: true
 summary: "Archlinux misses the mapping of `/` key for some keyboard brands, which makes the installation process a bit hard"
 tags: ["linux"]
 ---

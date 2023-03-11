@@ -1,7 +1,6 @@
 ---
 title: "Change WordPress uploads URL"
 date: 2016-08-15T10:38:16-03:00
-draft: true
 summary: "Changes the URL address WordPress renders for the user-uploaded files. The browser will fetch the files from the new address instead of fetching from the WordPress server."
 tags: ["wordpress", "php"]
 ---
