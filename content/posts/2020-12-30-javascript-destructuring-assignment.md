@@ -3,11 +3,12 @@ title: "JavaScript destructuring assignment"
 date: 2020-12-30T07:22:16-03:00
 draft: true
 summary: "This feature of JavaScript allows the programmer to unpack array and object values to assign them to variables and function parameters."
+tags: ["javascript"]
 ---
 
-## Assignments
+### Assignments
 
-### Array to scalars
+#### Array to scalars
 
 ```js
 const [ weight, age ] = [ 70, 36 ];
@@ -21,7 +22,7 @@ output
 36
 ```
 
-### Array to scalars and another array
+#### Array to scalars and another array
 
 Assing the first two array elements to the **weight** and **age** constants. The remaining array elements are assigned to the **remaining** constant.
 
@@ -39,7 +40,7 @@ output
 [ 170, 1984 ]
 ```
 
-### Object properties to scalars
+#### Object properties to scalars
 
 It also works with object properties. But instead of using `[]` in the left hand, the `{}` should be used.
 
@@ -55,7 +56,7 @@ output
 36
 ```
 
-### Object properties to scalars and another object
+#### Object properties to scalars and another object
 
 Assign the properties' **weight** and **age** to the constants with the same name. The remaining properties will be part of the **remaining** object.
 
@@ -78,7 +79,7 @@ output
 { height: 170, birth_year: 1984 }
 ```
 
-### Create array from arrays
+#### Create array from arrays
 
 Create the **array_3** by unpacking elements from **array_1** and **array_2** into a new array.
 
@@ -94,7 +95,7 @@ output
 [ 70, 36, 'setenta', 'trintaeseis' ]
 ```
 
-### Create an object from other objects
+#### Create an object from other objects
 
 Create the **obj3** by unpacking properties from **obj1** and **obj2** into a new object.
 
@@ -111,9 +112,9 @@ output
 ```
 
 
-## Function parameters
+### Function parameters
 
-### Array to position parameters
+#### Array to position parameters
 
 Array elements will be used as positional parameters for the function.
 
@@ -132,7 +133,7 @@ age 36
 weight 70
 ```
 
-### Object properties to keyword arguments
+#### Object properties to keyword arguments
 
 Object properties will be used as keyword arguments for the function
 
@@ -151,7 +152,7 @@ weight 70
 age 36
 ```
 
-## References
+### References
 
 * https://cursos.alura.com.br/destructuring-em-js-c308
   * https://github.com/juunegreiros

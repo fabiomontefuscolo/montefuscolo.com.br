@@ -3,9 +3,10 @@ title: "File handling on NodeJS"
 date: 2015-02-22T12:21:16-03:00
 draft: true
 summary: "List files from a directory and read files' content using NodeJS."
+tags: ["nodejs", "javascript"]
 ---
 
-## Reading file synchronously
+### Reading file synchronously
 ```js
 // countLines.js
 let fs = require('fs');
@@ -15,7 +16,7 @@ let str = buffer.toString();
 console.log(str.split('\n').length - 1);
 ```
 
-## Reading file asynchronously
+### Reading file asynchronously
 ```js
 // countLinesAsync.js
 var fs = require('fs');
@@ -26,7 +27,7 @@ fs.readFile(filename, function(err, data) {
 });
 ```
 
-## Listing files from a directory
+### Listing files from a directory
 ```js
 // ls.js
 var fs = require('js');
@@ -45,6 +46,6 @@ fs.readdir(dirPath, function (err, list) {
 });
 ```
 
-## References
+### References
 * http://nodeschool.io/#workshopper-list
 * https://github.com/rvagg/learnyounode

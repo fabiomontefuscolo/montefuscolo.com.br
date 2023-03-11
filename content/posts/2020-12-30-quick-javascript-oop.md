@@ -3,10 +3,11 @@ title: "Quick JavaScript OOP"
 date: 2020-12-30T07:22:16-03:00
 draft: true
 summary: "Basic JavaScript syntax to write classes, methods, properties and inheritance"
+tags: ["javascript"]
 ---
 
 
-## Defining a class
+### Defining a class
 
 ```js
 class Employee {
@@ -15,7 +16,7 @@ class Employee {
 ```
 
 
-## Defining the constructor
+### Defining the constructor
 
 ```js
 class Employee {
@@ -25,7 +26,7 @@ class Employee {
 ```
 
 
-## Adding properties
+### Adding properties
 
 ```js
 class Employee {
@@ -38,7 +39,7 @@ class Employee {
 ```
 
 
-## Creating a method
+### Creating a method
 
 ```js
 class Employee {
@@ -54,7 +55,7 @@ class Employee {
 ```
 
 
-## Static properties
+### Static properties
 
 ```js
 class Employee {
@@ -74,7 +75,7 @@ class Employee {
 ```
 
 
-## Getters and setters
+### Getters and setters
 
 ```js
 class Employee {
@@ -100,7 +101,7 @@ class Employee {
 ```
 
 
-## Inheritance
+### Inheritance
 
 ```js
 class Manager extends Employee {
@@ -119,7 +120,7 @@ class Diretor extends Employee {
 ```
 
 
-## Overwrite method
+### Overwrite method
 
 ```js
 class Diretor extends Employee {
@@ -134,7 +135,7 @@ class Diretor extends Employee {
 ```
 
 
-## Simulate abstract class
+### Simulate abstract class
 
 ```js
 class MyClass {
@@ -147,7 +148,7 @@ class MyClass {
 ```
 
 
-## Simulate abstract method
+### Simulate abstract method
 
 ```js
 class MyClass {
@@ -163,7 +164,7 @@ class MyClass {
 ```
 
 
-## References
+### References
 
 * https://cursos.alura.com.br/course/javascript-polimorfismo
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes

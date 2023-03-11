@@ -3,9 +3,10 @@ title: "Creating a Django development environment"
 date: 2014-08-21T20:46:16-03:00
 draft: true
 summary: "Setup a Django 1.6 development environment using python virtualenv."
+tags: ["django", "python"]
 ---
 
-## Install basic tools
+### Install basic tools
 
 ```shell
 $ sudo pacman -S      \
@@ -14,7 +15,7 @@ $ sudo pacman -S      \
     python-virtualenvwrapper
 ```
 
-## Load virtualenvwrapper
+### Load virtualenvwrapper
 
 ```shell
 $ source /usr/bin/virtualenvwrapper.sh
@@ -22,20 +23,20 @@ $ echo /usr/bin/virtualenvwrapper.sh >> ~/.bashrc
 ```
 
 
-## Create an env for a project called **pao_na_chapa**
+### Create an env for a project called **pao_na_chapa**
 
 ```shell
 $ mkvirtualenv pao_na_chapa -p /usr/bin/python2
 ```
 
 
-## Install Django
+### Install Django
 
 ```shell
 $ pip install Django==1.6
 ```
 
-## Create a Django project
+### Create a Django project
 
 ```shell
 (pao_na_chapa)$ django-admin startproject pao_na_chapa
@@ -47,7 +48,7 @@ $ pip install Django==1.6
 At this point, https://127.0.0.1:8000 should be accessible in the browser
 
 
-## Activating the **virtualenv**
+### Activating the **virtualenv**
 
 It should be executed for every new shell session
 
@@ -56,7 +57,7 @@ $ workon pao_na_chapa
 ```
 
 
-## References
+### References
 
 * https://docs.djangoproject.com/en/1.6/
 * https://pip.pypa.io/en/latest/installing.html#using-package-managers

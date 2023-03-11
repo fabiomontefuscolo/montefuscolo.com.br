@@ -3,9 +3,10 @@ title: "ICP Brasil client certs setup for Nginx"
 date: 2021-04-14T15:53:16-03:00
 draft: true
 summary: "Use client certificates to authenticate and control access to resources with Nginx."
+tags: ["nginx"]
 ---
 
-## Getting CA certs from ICP-Brazil
+### Getting CA certs from ICP-Brazil
 
 ```shell
 $ curl http://acraiz.icpbrasil.gov.br/credenciadas/CertificadosAC-ICP-Brasil/ACcompactado.zip -o /tmp/ACcompactado.zip
@@ -15,7 +16,7 @@ $ rm /tmp/ACcompactado.zip
 ```
 
 
-## Picking correct CA files to Nginx
+### Picking correct CA files to Nginx
 
 As of April 2021, 3 files from the downloaded zip are needed to work with Nginx:
 
@@ -34,7 +35,7 @@ You need to concatenate the 3 files above into a single one Nginx will read. Som
 ```
 
 
-## Setting up Nginx
+### Setting up Nginx
 
 These 3 directives below are needed by Nginx to start requesting the client certificate from ICP-Brasil certificate holders.
 
@@ -71,7 +72,7 @@ Variables forwarded to the backend.
 ```
 
 
-## Sample Nginx config
+### Sample Nginx config
 
 ```nginx
 server {
@@ -124,7 +125,7 @@ server {
 ```
 
 
-## References
+### References
 
 * http://nginx.org/en/docs/http/ngx_http_ssl_module.html#variables
 * https://gist.github.com/skarllot/9663935
