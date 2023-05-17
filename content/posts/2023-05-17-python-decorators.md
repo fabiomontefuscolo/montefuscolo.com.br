@@ -4,8 +4,6 @@ date: 2023-05-17T14:28:35+02:00
 draft: true
 ---
 
-# Python Decorators
-
 ## Simple decorator
 
 Decorating the function `flower`, to print `red roses`
