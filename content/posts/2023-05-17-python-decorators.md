@@ -1,6 +1,7 @@
 ---
 title: "Python Decorators"
 date: 2023-05-17T14:28:35+02:00
+summary: "Examples to quickly learn and use python decorators"
 tags: ["python", "decorators"]
 ---
 
