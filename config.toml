@@ -2,3 +2,6 @@ baseURL = 'https://montefuscolo.com.br/'
 languageCode = 'en-us'
 title = 'Things I forget'
 theme = "beautifulhugo"
+
+[Params]
+  selfHosted = true
