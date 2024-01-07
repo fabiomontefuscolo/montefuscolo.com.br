@@ -1,7 +1,12 @@
-baseURL = 'https://montefuscolo.com.br/'
-languageCode = 'en-us'
-title = 'Things I forget'
-theme = "beautifulhugo"
+baseURL='https://montefuscolo.com.br/'
+languageCode='en-us'
+title='Things I forget'
+theme="beautifulhugo"
+
+[author]
+name='Fabio Montefuscolo'
+website='https://montefuscolo.com.br'
+github='fabiomontefuscolo/montefuscolo.com.br'
 
 [Params]
-  selfHosted = true
+selfHosted=true
